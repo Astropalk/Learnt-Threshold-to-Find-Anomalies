@@ -26,17 +26,17 @@ def tau_mix_min(input_directory, output_directory):
             minRuc2014 = data_need['ruc2014'].min()
             min_candidate = minRuc2014
 
-            beta_range_max = np.arange(.0001, max_candidate, .0008)
-            beta_range_min = np.arange(.0001, abs(min_candidate), .0008)
+            beta_range_max = np.arange(.00001, max_candidate, .00008)
+            beta_range_min = np.arange(.00001, abs(min_candidate), .00008)
 
             [attack_t_max_opt, cost_list_max, tau_list_max] = getattr(utils, 'calculate_t_max_' + loss_function)(
                 data_need, keys,
-                tau_range=[.0, max_candidate, .00080],
-                w1=.5, w2=2., beta_range_max=np.arange(.0001, max_candidate, .0008))
+                tau_range=[.0, max_candidate, .000080],
+                w1=.5, w2=2., beta_range_max=np.arange(.00001, max_candidate, .00008))
             [attack_t_min_opt, cost_list_min, tau_list_min] = getattr(utils, 'calculate_t_min_' + loss_function)(
                 data_need, keys,
-                tau_range=[min_candidate, .0, .00080],
-                w1=.5, w2=2., beta_range_min=np.arange(.0001, abs(min_candidate), .0008))
+                tau_range=[min_candidate, .0, .000080],
+                w1=.5, w2=2., beta_range_min=np.arange(.00001, abs(min_candidate), .00008))
             # optimal tau max
             attack_t_max_opt_arr = pd.DataFrame(np.transpose(np.array([attack_t_max_opt])), columns=["optimal_tau_max"])
             beta_range_max_arr = pd.DataFrame(np.transpose(np.array([beta_range_max])), columns=["beta_p"])
