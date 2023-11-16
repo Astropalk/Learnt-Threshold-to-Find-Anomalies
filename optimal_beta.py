@@ -3,7 +3,7 @@ import sys
 import os
 import itertools
 
-input_path_CHT = 'C:/Users/abedz/OneDrive - Western Michigan University/PhD/Summer2021/New folder/navid w/New attacked data duration 4Mths/track_FA_2014_6Ms_diff'
+input_path_CHT = 'C:/Users/abedz/.../New attacked data duration 4Mths/track_FA_2014_6Ms_diff'
 # constant values
 DEL_AVG_ARRAY = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000]
 RO_MAL_ARRAY = [0.20, 0.30, 0.40, 0.50, 0.60, 0.70]
@@ -124,7 +124,7 @@ for del_val in DEL_AVG_ARRAY:
 result_df = pd.DataFrame(result_list)
 
 # Save the DataFrame as a CSV file in the specified directory
-output_path = 'C:/Users/abedz/OneDrive - Western Michigan University/PhD/Summer2021/New folder/navid w/New attacked data duration 4Mths/Optimal_beta_tau_diff_romal_delta_6Ms'
+output_path = 'C:/Users/abedz/.../New attacked data duration 4Mths/Optimal_beta_tau_diff_romal_delta_6Ms'
 output_file_name = 'optimal_tau_beta_both_6Ms.csv'
 output_file_path = os.path.join(output_path, output_file_name)
 result_df.to_csv(output_file_path, index=False)
@@ -155,7 +155,7 @@ for del_val, romal_val in itertools.product(DEL_AVG_ARRAY, RO_MAL_ARRAY):
 result_df = pd.DataFrame(result_list)
 
 # Save the DataFrame as a CSV file in the specified directory
-output_path = 'C:/Users/abedz/OneDrive - Western Michigan University/PhD/Summer2021/New folder/navid w/New attacked data duration 4Mths/Optimal_beta_tau_diff_romal_delta_2Ms'
+output_path = 'C:/Users/abedz/.../New attacked data duration 4Mths/Optimal_beta_tau_diff_romal_delta_2Ms'
 output_file_name = 'optimal_tau_beta_diff_2Ms.csv'
 output_file_path = os.path.join(output_path, output_file_name)
 result_df.to_csv(output_file_path, index=False)
