@@ -3,12 +3,12 @@ import pandas as pd
 import os
 import itertools
 
-input_path_huber = 'C:/Users/abedz/OneDrive - Western Michigan University/PhD/Summer2021/New folder/navid w/New attacked data duration 4Mths/huber_tau_2014_2Ms'
-input_path_cauchy = 'C:/Users/abedz/OneDrive - Western Michigan University/PhD/Summer2021/New folder/navid w/New attacked data duration 4Mths/Cauchy_tau_2014_2Ms'
-input_path_tukey = 'C:/Users/abedz/OneDrive - Western Michigan University/PhD/Summer2021/New folder/navid w/New attacked data duration 4Mths/Tukey_tau_2014_2Ms'
+input_path_huber = 'C:/Users/abedz/.../New attacked data duration 4Mths/huber_tau_2014_2Ms'
+input_path_cauchy = 'C:/Users/abedz/.../New attacked data duration 4Mths/Cauchy_tau_2014_2Ms'
+input_path_tukey = 'C:/Users/abedz/.../New attacked data duration 4Mths/Tukey_tau_2014_2Ms'
 
-test_attack_path = 'C:/Users/abedz/OneDrive - Western Michigan University/PhD/Summer2021/New folder/navid w/New attacked data duration 4Mths/RUCs_values_2016_2Ms'
-output_path = 'C:/Users/abedz/OneDrive - Western Michigan University/PhD/Summer2021/New folder/navid w/New attacked data duration 4Mths/track_FA_2014_2Ms_diff'
+test_attack_path = 'C:/Users/abedz/.../New attacked data duration 4Mths/RUCs_values_2016_2Ms'
+output_path = 'C:/Users/abedz/.../New attacked data duration 4Mths/track_FA_2014_2Ms_diff'
 
 # constant values
 DEL_AVG_ARRAY = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000]
